@@ -68,8 +68,8 @@
                       </tr>
                       <?php
                         endforeach;
-                        
                         ?>
+                        <a href="<?php base_url() ?>index.php/welcome/form">link tambah</a>
                     </tbody>
                   </table>
                 </div>

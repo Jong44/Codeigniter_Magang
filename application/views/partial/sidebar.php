@@ -29,6 +29,12 @@
               <p>Table List</p>
             </a>
           </li>
+          <li>
+            <a href="<?php base_url()?>">
+              <i class="nc-icon nc-tile-56"></i>
+              <p>Insert Data</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

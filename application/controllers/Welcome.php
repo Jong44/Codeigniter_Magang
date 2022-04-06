@@ -19,6 +19,7 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
 
+	
 	public function __construct()		
 	{
 		parent::__construct();
@@ -32,4 +33,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('partial/footer');
 		$this->load->view('partial/content',$data);
 	}
+		public function form()
+		{
+			$this->load->view('user/tambah');
+		}
+		public function simpanData()
+		{
+			$this->mahasiswa->inputData();
+			redirect ()-> base_url();
+		}
 }

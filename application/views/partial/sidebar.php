@@ -31,7 +31,7 @@
           </li>
           <li>
               <a href="<?php base_url() ?>index.php/welcome/form">
-              <i class="nc-icon nc-tile-56"></i>
+              <i class="nc-icon nc-single-copy-04"></i>
               <p>Insert Data</p>
             </a>
         </li>

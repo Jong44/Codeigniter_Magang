@@ -1,9 +1,15 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+ 
+
 </head>
 <body>
 <body class="">
@@ -14,41 +20,45 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">Siswa</h4>
+                <h4 class="card-title">Tabel Siswa</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
+                    <script>
+                    $(document).ready( function () {
+                      $('#table_id\').DataTable();
+                    } );
+                    </script>
                     <thead class=" text-primary">
                       <th>
-                        Name
+                        NIS
                       </th>
                       <th>
-                        Country
+                        Nama
                       </th>
                       <th>
-                        City
-                      </th>
-                      <th>
-                        alamat
+                        Alamat
                       </th>
                       <th>
                         Telpon
                       </th>
                       <th>
                         Tanggal Lahir
-                      </th><th>
+                      </th>
+                      <th>
                         Agama
+                      <th>
+                        Aksi
                       </th>
                     </thead>
                     <tbody>
                       <?php
-                      $nisn = 1;
                       foreach ($siswa as $u):
                         ?>
                       <tr>
                         <td>
-                          <?=$nisn++;?>
+                        <?=$u['nis'];?>
                         </td>
                         <td>
                         <?=$u['nama'];?>
@@ -65,17 +75,24 @@
                         <td>
                         <?=$u['agama'];?>
                         </td>
+                        <td>
+                        <a href="<?php base_url() ?>index.php/welcome/hapus/<?=$u['nis']?>">Hapus</a>
+                        <a href="<?php base_url() ?>index.php/welcome/formEdit/<?=$u['nis']?>">update</a>
+                      </td>
                       </tr>
                       <?php
                         endforeach;
                         ?>
-                        <a href="<?php base_url() ?>index.php/welcome/form">link tambah</a>
+                        
+                        
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
           </div>
+
+          
    
 
 

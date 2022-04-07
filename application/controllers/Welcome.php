@@ -42,4 +42,19 @@ class Welcome extends CI_Controller {
 			$this->mahasiswa->inputData();
 			redirect ()-> base_url();
 		}
+		public function hapus($nis)
+		{
+			$this->mahasiswa->hapusData($nis);
+			redirect ()-> base_url();
+		}
+		public function formEdit($nis)
+		{
+			$data['siswa'] = $this->mahasiswa->getSiswaByNIS($nis);
+			$this->load->view('user/update', $data);
+		}
+			public function ubahData()
+		{
+			$this->mahasiswa->updateData();
+			redirect ()-> base_url();
+		}
 }

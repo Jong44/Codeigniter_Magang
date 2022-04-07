@@ -30,11 +30,11 @@
             </a>
           </li>
           <li>
-            <a href="<?php base_url()?>">
+              <a href="<?php base_url() ?>index.php/welcome/form">
               <i class="nc-icon nc-tile-56"></i>
               <p>Insert Data</p>
             </a>
-          </li>
+        </li>
         </ul>
       </div>
     </div>

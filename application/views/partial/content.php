@@ -3,20 +3,20 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   
     <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+    <link href="<?= base_url('assets')?>/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?= base_url('assets')?>/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	  <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
 </head>
 <body>
-<body class="">
-<div class="wrapper ">
-<div class="content">
+<body>
+<div class="wrapper">
 <div class="main-panel">
+<div class="content">
       <div class="row">
-          <div class="col-md-12">
+          <div class="col-xl">
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Tabel Siswa</h4>
@@ -71,10 +71,10 @@
                         <?=$u['agama'];?>
                         </td>
                         <td>
-                        <a href="<?php base_url() ?>index.php/welcome/hapus/<?=$u['nis']?>">
-                        <i class="nc-icon nc-simple-add"></i></a>
-                        <a href="<?php base_url() ?>index.php/welcome/formEdit/<?=$u['nis']?>">
+                        <a href="<?php base_url() ?>welcome/hapus/<?=$u['nis']?>">
                         <i class="nc-icon nc-simple-delete"></i></a>
+                        <a href="<?php base_url() ?>welcome/formEdit/<?=$u['nis']?>">
+                        <i class="nc-icon nc-refresh-69"></i></a>
                       </td>
                       </tr>
                       <?php
@@ -95,8 +95,8 @@
 
           
  <!--   Core JS Files   -->
-  <script src="assets/js/core/popper.min.js"></script>
-  <script src="assets/js/core/bootstrap.min.js"></script>
-  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="<?= base_url('assets')?>/assets/js/core/popper.min.js"></script>
+  <script src="<?= base_url('assets')?>/assets/js/core/bootstrap.min.js"></script>
+  <script src="<?= base_url('assets')?>/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
 </body>

@@ -15,7 +15,7 @@
                 Form Tambah Data
             </div>
             <div class="card-body">
-                <form action="<?= base_url() ?>index.php/welcome/simpanData" method="post">
+                <form action="<?= base_url() ?>welcome/simpanData" method="post">
                     <div class="form-group">
                         <label >NIS</label>
                         <input type="text" name="nis" class="form-control"  placeholder="Enter NIS">

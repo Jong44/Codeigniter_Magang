@@ -2,10 +2,12 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-<link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+<link href="<?= base_url('assets')?>/css/bootstrap.min.css" rel="stylesheet" />
+<link href="<?= base_url('assets')?>/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
 </head>
 <body>
+<div class="wrapper">
+
 <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
@@ -68,8 +70,8 @@
           </div>
         </div>
       </nav>
-<script src="assets/js/core/jquery.min.js"></script>
-<script src="assets/js/core/popper.min.js"></script> 
-<script src="assets/js/core/bootstrap.min.js"></script>
-<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="<?= base_url('assets')?>/js/core/jquery.min.js"></script>
+<script src="<?= base_url('assets')?>/js/core/popper.min.js"></script> 
+<script src="<?= base_url('assets')?>/js/core/bootstrap.min.js"></script>
+<script src="<?= base_url('assets')?>/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 </body>

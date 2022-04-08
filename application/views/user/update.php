@@ -15,7 +15,7 @@
                 Form Edit
             </div>
             <div class="card-body">
-                <form action="<?= base_url() ?>index.php/welcome/ubahData" method="post">
+                <form action="<?= base_url() ?>welcome/ubahData" method="post">
                     <input type="hidden" name="nis" value="<?= $siswa['nis'] ?>">
                     <div class="form-group">
                         <label>Nama</label>
